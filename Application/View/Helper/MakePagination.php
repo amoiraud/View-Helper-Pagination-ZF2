@@ -8,7 +8,7 @@ use Zend\View\Helper\AbstractHelper,
     Zend\View\Resolver; 
 
 /**
- * @author Adrien
+ * @author Adrien Moiraud
  * @version 03/10/2012
  */
 class MakePagination extends AbstractHelper
