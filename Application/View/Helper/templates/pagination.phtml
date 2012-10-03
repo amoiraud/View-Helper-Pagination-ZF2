@@ -1,0 +1,23 @@
+<table width="100%" style="margin-top: 10px; font-size: 11px">
+    <tr>
+        <td style="padding-left: 15px" width="20%">
+            <?php echo $nbResults; ?> r&eacute;sult(s)
+        </td>
+        <td style="text-align: right" width="80%">
+            Page :&nbsp;&nbsp;
+            <?php
+                for ($i = 1; $i <= $nbPages; $i++) {
+                    if ($i == $actualPage) {
+            ?>
+                        <input type="button" disabled="disabled" style="color: #75BBF0; font-weight: bold" value="<?php echo $i; ?>" />&nbsp;
+            <?php
+                    } else {
+            ?>
+                        <input type="button" style="color: #75BBF0" value="<?php echo $i; ?>" onClick="changePage('<?php echo $i; ?>')" />&nbsp;
+            <?php
+                    }
+                }
+            ?>
+        </td>
+    </tr>
+</table>
